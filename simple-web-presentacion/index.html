@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dan Almenar Williams</title>
+        <meta name="description" content="Página de presentación de Daniel Almenar Williams para el bootcamp Codo a Codo: Go + React">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- logo personal -->
+        <link rel="icon" href="/static/logo.png">
+        <!-- materializecss -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- material icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- hoja de estilo de usuario -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="flow-text">
+        <header id="header">
+            <div class="navbar">
+                <nav class="navbar-fixed grey lighten-2">
+                    <div class="nav-wrapper">
+                        <a href="https://danielalmenar.com" target="blank" class="brand-logo left"><img src="/static/logo.png" alt="link a Dan web" id="logo"/></a>
+                        <ul class="right">
+                            <li><a id="home-btn" href="#home"><i class="material-icons black-text">home</i></a></li>
+                            <li><a id="bio-btn" href="#bio"><i class="material-icons black-text">fingerprint</i></a></li>
+                            <li><a id="projects-btn" class="projects-btn" href="#projects"><i class="material-icons left black-text">code</i></a></li>
+                            <li><a id="contact-btn" href="#contact"><i class="material-icons black-text">email</i></a></li>
+                            <li><a id="apps-btn" href="#fun-stuff"><i class="material-icons black-text">apps</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="home" class="animate">
+                <div id="home-img" class="hero is-fullheight">
+                    <div class="hero-body">
+                        <div class="row">
+                            <div class="col s12 l8 card">
+                                <div class="">
+                                    <img src="/static/dan_profile.png" alt="profile picture" class="responsive-img pro-pic">
+                                </div>
+                                <div class="col s12">
+                                    <h1 class="title white-text">¡Hola! Soy...</h1>
+                                </div>
+                                <div class="col s12 card-stacked">
+                                    <div class="card-content">
+                                        <h3 class="title white-text is-size-2">Daniel Almenar Williams</h3>
+                                        <p class="subtitle blue-text text-lighten-4 is-size-4">Fullstack Developer</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="white-text is-size-5">Quizás me recuerden por películas como 
+                                            <span class="movie-title deep-orange-text text-lighten-4 is-size-4">
+                                                "Yo también estoy haciendo ese bootcamp"
+                                            </span>.</p>
+                                        <p class="white-text is-size-5">También protagonicé 
+                                            <span class="movie-title deep-orange-text text-lighten-4 is-size-4">
+                                                "¿Qué carajo se fumó este pana?"
+                                            </span>
+                                                 y la celebérrima 
+                                            <span class="movie-title deep-orange-text text-lighten-4 is-size-4">
+                                                "Che, es medio boludo este, ¿no?"
+                                            </span>.
+                                        </p>
+                                        <br><p class="white-text is-size-5">Si quieres saber más de mi, hacé clíck ahí abajo.
+                                            Sí, ahí donde dice "BIO". Le das click y listo. Ahí te enterás.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a id="bio-action-btn" class="deep-orange-text text-lighten-4 is-size-4" href="#bio">Bio</a>                                    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            <section id="bio" class="hidden animate">
+                <div class="hero is-fullheight blue lighten-3">
+                    <div class="hero-body">
+                        <div class="row">
+                            <div class="col s12 m4">
+                                <p class="title">Dan Almenar</p>
+                                <ul class="subtitle">
+                                    <li>Autodidacta</li>
+                                    <li>42</li>
+                                    <li>Venetino</li>
+                                    <li>Casado</li>
+                                    <li>2 hijos</li>
+                                </ul><br>
+                            </div>
+                            <div class="col s12 m8 is-size-5">
+                                <p>Resulta que un día me levanté y dije algo tipo <span class="orange-text text-darken-4 italic">"Ché, Dan. ¿Y si le hacés una app para la tablet a Hijita?"</span></p>
+                                <p>
+                                    Y entonces, pum, aprendí <span class="bold">Python</span> y le hice una app a Hijita con un framework llamado <span class="bold">Kivy</span>.
+                                    Claro, estoy omitiendo un montón de cosas en el medio, pero bueno, se entiende la idea, ¿no?
+                                </p>
+                                <p>
+                                    Y entonces me gustó la cosa esa de la <span class="italic">programación</span>,
+                                     algo que no había hecho nunca desde segundo año de bachillerato que nos enseñaron a
+                                     hacer algunas cositas en <span class="bold">Basic</span>. Y 
+                                     no, no recuerdo nada de Basic.
+                                </p>
+                                <p>
+                                    Con Python hice algunas cosas nada memorables,
+                                     y me gustó mucho todo lo relacionado al <span class="italic">Análisis y Visualización de Datos, Machine Learning y Procesamiento de Lenguaje Natural (NLP)</span>.
+                                </p>
+                                <p>
+                                    Después decidí aprender <span class="bold">Golang</span>.
+                                    De nuevo, hice un par de cositas nada memorables y me di cuenta que 
+                                    era hora de aprender <span class="bold">Javascript</span> 
+                                    para que las apps no se vieran tan bochornosas.
+                                </p>
+                                <p>
+                                    Y después me dio por aprender algún framework de Javascript, así que aprendí <span class="italic">VueJS</span>. 
+                                    Y se me da bastante bien (creo).
+                                </p>
+                                <p>
+                                    Y después recordé que los lenguajes tipados me gustan más que los no tipados 
+                                    así que aprendí <span class="bold">Typescript</span>.
+                                </p>
+                                <p>
+                                    Y acá estoy en <span class="italic">Codo a Codo</span> 
+                                    que me va a servir para repasar Go, que tengo tiempo sin tocar, 
+                                    y para aprender <span class="bold">React</span>, que no es poca cosa.
+                                </p>
+                                <br>
+                                <p class="is-size-4">
+                                    Para ver más, hace click <a id="projects-link" href="#projects">acá</a>.
+                                </p>
+                                <br>
+                                <p class="is-size-5">
+                                    Y como nunca pierdo oportunidad para aclarar que 
+                                    <span class="bold italic">estoy buscando laburo</span> dejo acá mi CV actualizado
+                                    <a href="/static/Dan_CV_es.pdf" download="Daniel Almenar Williams - Fullstack Developer"><i class="material-icons orange-text text-darken-4 small">download</i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="hidden animate">
+                <div class="hero is-fullheight orange lighten-3">
+                    <div class="hero-body">
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="title">Cositas con código</p>
+                                <p class="col s10 m6 subtitle is-size-4">
+                                    Una pequeña muestra de lo que he hecho
+                                </p>
+                                <br>
+                            </div>
+                            <!-- cards -->
+                            <!-- portafolio personal -->
+                            <div class="col s10 push-s1 l7 push-l2 project-card">
+                                <div class="card s8">
+                                    <div class="card-image">
+                                        <img src="/static/portafolio.png" alt="web personal de Dan">
+                                    </div>
+                                    <div class="card-title">
+                                        <p class="bold is-size-5 project-card-title">
+                                            <i class="material-icons">face</i>
+                                            Portafolio Personal
+                                            <i class="material-icons right activator">more_vert</i>                                            
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <p class="is-size-5">Lo sé...</p>                                        
+                                        <!-- spiderman meme image -->
+                                        <img class="responsive-image" src="https://bit.ly/3u8v2dl" alt="spiderman meme">
+                                        <span class="card-title grey-text text-darken-4">Portafolio Personal<i class="material-icons right">close</i></span>                                        
+                                        <p class="is-size-6">
+                                            Desarrollado en <span class="bold">VueJS</span> y 
+                                            <span class="bold">Typescript</span> 
+                                            con base de datos alojada en <span class="bold">Google Firebase</span>.
+                                        </p>
+                                    </div>
+                                    <div class="card-action center project-link">
+                                        <a href="https://danielalmenar.com" target="blank" class="grey-text text-darken-3">
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- yawp -->
+                            <div class="col s10 push-s1 l7 push-l2 project-card">
+                                <div class="card s8">
+                                    <div class="card-image">
+                                        <img src="/static/yawp logo.png" alt="yawp! logo">
+                                    </div>
+                                    <div class="card-title">
+                                        <p class="bold is-size-5 project-card-title">
+                                            <i class="material-icons">groups</i>
+                                            yawp! Incognito Microblogging
+                                            <i class="material-icons right activator">more_vert</i>
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">yawp!<i class="material-icons right">close</i></span>
+                                        <p class="is-size-6">
+                                            PWA de microblogging desarrollada en <span class="bold">VueJS</span> y 
+                                            <span class="bold">Javascript</span> 
+                                            con base de datos alojada en <span class="bold">Google Firebase</span>.
+                                        </p><br>
+                                        <p class="is-size-6">La característica principal es que garantiza el anonimato 
+                                            ya que hace hash progresivo de los nombres de los usuarios en cada publicación.
+                                        </p><br>
+                                        <p class="is-size-6">Si bien la app está activa, tengo pensado hacer una 
+                                            refactorización de todo el código, para implementar Typescript, añadir algunas 
+                                            funcionalidades y mejorar la UI.
+                                        </p>
+                                    </div>
+                                    <div class="card-action center project-link">
+                                        <a href="https://u-yawp.web.app.com" target="blank" class="grey-text text-darken-3">
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- color display mini app -->
+                            <div class="col s10 push-s1 l7 push-l2 project-card">
+                                <div class="card s8">
+                                    <div class="card-image">
+                                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="WNXLebv" data-user="dan-almenar" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                            <span>See the Pen <a href="https://codepen.io/dan-almenar/pen/WNXLebv">
+                                            color-display</a> by dan-almenar (<a href="https://codepen.io/dan-almenar">@dan-almenar</a>)
+                                            on <a href="https://codepen.io">CodePen</a>.</span>
+                                          </p>
+                                          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                                        <p class="bold is-size-5 project-card-title">
+                                            <i class="material-icons">palette</i>
+                                                Color display mini app
+                                            <i class="material-icons right activator">more_vert</i>
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Color display mini app<i class="material-icons right">close</i></span>
+                                        <p class="is-size-6">
+                                            Pequeña app desarrollada en <span class="italic">Codepen</span> con  
+                                            <span class="bold">VueJS</span> 
+                                            que permite introducir cualquier nombre de color aceptado por CSS o 
+                                            su valor hexadecimal y cambiará programáticamente un cuadro.
+                                        </p><br>
+                                        <p class="is-size-6">La intención era simplemente demostrar cómo se puede 
+                                            manipular el estilo de un componente de forma reactiva en VueJS.
+                                        </p>
+                                    </div>
+                                    <div class="card-action center project-link">
+                                        <a href="https://codepen.io/dan-almenar/pen/WNXLebv" target="blank" class="grey-text text-darken-3">
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="hidden animate">
+                <div class="hero is-fullheight black">
+                    <div class="hero-body black">
+                        <div class="row">
+                            <div class="col s12 m5 pull-m2">
+                                <h1 class="title is-size-2 white-text">Contacto</h1>
+                                <h2 class="subtitle is-size-4 white-text">
+                                    Distintas formas de contactarme
+                                </h2>
+                            </div>
+                            <div class="col s12 m3">
+                                <!-- whatsapp -->
+                                <!-- el link a whatsapp se muestra unicamente en teléfonos -->
+                                <div class="card is-hidden-tablet">
+                                    <div class="card-content s6 m4">
+                                        <p class="title green-text text-lighten-1 is-size-5">
+                                            WhatsApp
+                                        </p>
+                                        <a class="subtitle is-hidden-tablet green-text text-lighten-1 is-size-6" href="https://bit.ly/3KECTpE">
+                                            <i class="material-icons green-text text-lighten-1">whatsapp</i>
+                                             Escribime
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- email -->
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title white-text is-size-5">
+                                            Email
+                                        </p>
+                                        <a class="subtitle white-text is-size-6" href="mailto:danielalmenar@gmail.com">
+                                            <i class="material-icons white-text">email</i>
+                                            Email
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="apps" class="hidden animate">
+                <h1>Apps</h1>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <!-- script de materializecss -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" async defer></script>
+        <!-- codepen script -->
+        <!-- <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> -->
+        <!-- javascript script -->
+        <script src="index.js" async defer></script>
+    </body>
+</html>

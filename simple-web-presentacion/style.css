@@ -1,0 +1,85 @@
+/*
+Se importa el framework Bulma (bulma.io) para hacer uso
+de su clase Hero
+*/
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+/*
+estilos definidos por mi para complementar los frameworks utilizados
+(materializecss y bulma)
+*/
+#logo {
+    height: 50px;
+    width: auto;
+    padding-top: 20px;
+}
+.pro-pic {
+    width: 160px;
+    height: auto;
+}
+.nav-wrapper {
+    padding-right: 50px;
+}
+.brand-logo {
+    margin-left: 50px;
+}
+.card-image {
+    align-self: center;
+}
+.card {
+    background: none;
+}
+.card-content > .subtitle {
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: contents;
+}
+#home-img {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.movie-title {
+    font-style: italic;
+    font-weight: bold;
+}
+#bio-action {
+    padding: 8px 16px;
+    border: 4px solid #f5f5f5;
+    border-radius: 10px;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.animate {
+    animation: 2s fadeIn forwards;
+}
+.project-action {
+    border: 2px solid darkslategray;
+    border-radius: 8px;
+}
+.project-card {
+    border: 6px solid snow;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 25px auto;
+}
+
+/* animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
