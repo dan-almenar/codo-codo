@@ -7,7 +7,7 @@
         <meta name="description" content="Página de presentación de Daniel Almenar Williams para el bootcamp Codo a Codo: Go + React">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- logo personal -->
-        <link rel="icon" href="/static/logo.png">
+        <link rel="icon" href="/">
         <!-- materializecss -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- material icons -->
@@ -20,8 +20,13 @@
             <div class="navbar">
                 <nav class="navbar-fixed grey lighten-2">
                     <div class="nav-wrapper">
-                        <a href="https://danielalmenar.com" target="blank" class="brand-logo left"><img src="/static/logo.png" alt="link a Dan web" id="logo"/></a>
                         <ul class="right">
+                            <!--
+                            <li>
+                                <a href="https://danielalmenar.com" target="blank" class="brand-logo left">
+                                    <img src="/static/logo.png" alt="link a Dan web" id="logo"/>
+                                </a>                                
+                            </li> -->
                             <li><a id="home-btn" href="#home"><i class="material-icons black-text">home</i></a></li>
                             <li><a id="bio-btn" href="#bio"><i class="material-icons black-text">fingerprint</i></a></li>
                             <li><a id="projects-btn" class="projects-btn" href="#projects"><i class="material-icons left black-text">code</i></a></li>
@@ -263,49 +268,93 @@
             <section id="contact" class="hidden animate">
                 <div class="hero is-fullheight black">
                     <div class="hero-body black">
-                        <div class="row">
-                            <div class="col s12 m5 pull-m2">
-                                <h1 class="title is-size-2 white-text">Contacto</h1>
-                                <h2 class="subtitle is-size-4 white-text">
-                                    Distintas formas de contactarme
-                                </h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h1 class="title white-text is-size-4">Contacto</h1>
+                                    <h2 class="subtitle white-text is-size-6">Distintas formas de contactarme</h2>
+                                </div>
                             </div>
-                            <div class="col s12 m3">
+                        </div>
+                        <div class="container">
+                            <div class="row">
                                 <!-- whatsapp -->
                                 <!-- el link a whatsapp se muestra unicamente en teléfonos -->
-                                <div class="card is-hidden-tablet">
-                                    <div class="card-content s6 m4">
-                                        <p class="title green-text text-lighten-1 is-size-5">
-                                            WhatsApp
-                                        </p>
-                                        <a class="subtitle is-hidden-tablet green-text text-lighten-1 is-size-6" href="https://bit.ly/3KECTpE">
-                                            <i class="material-icons green-text text-lighten-1">whatsapp</i>
-                                             Escribime
-                                        </a>
-                                    </div>
+                                <div class="col s12 push-s2">
+                                    <div class="card is-hidden-tablet">
+                                        <div class="card-content">
+                                            <a href="https://bit.ly/3i0ypx4" class="subtitle green-text text-lighten-1 is-size-6">
+                                                <i class="material-icons green-text text-lighten-1">whatsapp</i>
+                                                 WhatsApp
+                                            </a>
+                                        </div>
+                                    </div>                                    
                                 </div>
                                 <!-- email -->
-                                <div class="card">
-                                    <div class="card-content">
-                                        <p class="title white-text is-size-5">
-                                            Email
-                                        </p>
-                                        <a class="subtitle white-text is-size-6" href="mailto:danielalmenar@gmail.com">
-                                            <i class="material-icons white-text">email</i>
-                                            Email
-                                        </a>
+                                <div class="col s12 push-s2">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <a href="mailto:danielalmenar@gmail.com" class="subtitle white-text is-size-6">
+                                                <i class="material-icons white-text">email</i>
+                                                 Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Twitter -->
+                                <div class="col s12 push-s2">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <a href="https://bit.ly/3tOefvT" target="blank" class="subtitle cyan-text text-lighten-1 is-size-6">
+                                                <i class="material-icons cyan-text text-lighten-1">flutter_dash</i>
+                                                 Twitter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LinkedIn -->
+                                <div class="col s12 push-s2">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <a href="https://bit.ly/3i0vwfV" class="subtitle indigo-text text-darken-3 is-size-6">
+                                                <i class="material-icons indigo-text text-darken-3">badge</i>
+                                                 LinkedIn
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        
-                        
-                    </div>
-                </div>
             </section>
             <section id="apps" class="hidden animate">
-                <h1>Apps</h1>
+                <div class="hero is-fullheight">
+                    <div class="hero-body yellow">
+                        <div class="row">
+                            <!--
+                            <div class="col s12 m8 black-text">
+                                <h2 class="title bold">Tareas</h2>
+                                <p class="is-size-6">Esta pequeña app almacena los datos en el <span class="italic">localStore</span> 
+                                    por lo que las tareas que anotes estarán visibles hasta que las elimines.
+                                </p>
+                            </div>
+                            -->
+                            <div class="col s12">
+                                <div class="app-description">
+                                    <h2 class="title bold">Calculadora de área</h2>
+                                    <p class="is-size-6">(Basada en el ejercicio Nro. 2)</p>
+                                </div>
+                                <div class="area-form">
+                                    <input type="text" id="area-input" placeholder="Ingrese un número (. decimal)" onkeyup="calculateArea()">
+                                    <br><span class="hidden" id="area-input-span">Ingrese un número válido</span>
+                                </div>
+                                <div class="app-results">
+                                    <span id="circle"></span>
+                                    <br><span id="square"></span>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

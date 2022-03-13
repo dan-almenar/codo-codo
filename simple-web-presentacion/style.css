@@ -73,6 +73,11 @@ estilos definidos por mi para complementar los frameworks utilizados
     border-radius: 8px;
     margin: 25px auto;
 }
+input::placeholder  {
+    color: grey;
+    font-size: 1.1rem;
+    font-style: italic;
+}
 
 /* animaciones */
 @keyframes fadeIn {
