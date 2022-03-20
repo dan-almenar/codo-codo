@@ -1,0 +1,40 @@
+/*
+Se importa el framework Bulma (bulma.io) para hacer uso
+de su clase Hero
+*/
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.hero-header {
+    margin: 50px auto;
+}
+.canvas {
+    padding-left: 30%;
+}
+.figure-title {
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.checkbox-label {
+    padding-left: 15px;
+}
+.hidden {
+    visibility: hidden;
+}
+#sides-input {
+    margin: 0 15px;
+    padding: 5px 8px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px 8px;
+}

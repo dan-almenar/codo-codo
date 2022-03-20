@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Creador de Figuras Geométricas</title>
+        <meta name="description" content="Crea figuras geométricas y obtén su área">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="hero is-fullheight is-primary">
+            <div class="container columns">
+                <div class="hero-header column">
+                    <h1 class="title">Figuras Geométricas</h1>
+                    <h2 class="subtitle">por <a href="https://danielalmenar.com">Dan Almenar Williams</a></h2>
+                </div>
+                <div class="hero-header column">
+                    <p class="title">
+                    Instrucciones: 
+                    </p>
+                    <p class="subtitle">
+                        Una vez que el usuario defina las figuras geométricas que desee, 
+                        las mismas serán representadas abajo.
+                    </p>
+                    <p class="subtitle">
+                        Cada imagen estará acompañada del resultado del cálculo del área. 
+                        Para una mejor lectura, se han reducido las posiciones decimales a un máximo 
+                        de tres dígitos.
+                    </p>
+                    <p class="subtitle">
+                        Si la casilla 'Polígono' no está seleccionada, se entenderá que la figura 
+                        a graficar es un círculo.
+                    </p>
+                </div>
+            </div>
+            <div class="container hero-header column">
+                <form name="figures">
+                    <div class="column">
+                        <input class="checkbox" type="checkbox" name="figure" id="polygon-checkbox" onchange="toggleSidesInput(this.checked)">
+                        <label class="checkbox-label subtitle" for="polygon-radio">Polígono</label>
+                        <input type="number" name="sides-input" id="sides-input" placeholder="lados" min="3" max="12">
+                    </div>
+                    <div class="column">
+                        <input type="range" name="len-input" id="len-input" min="0.1" max="100.0" step="0.1" value="10" onchange="setRangeValSpan(this.value)">
+                        <span id="range-val"></span>
+                        <label for="len-input">Longitud</label>
+                    </div>
+                    <div class="column">
+                        <button class="subtitle" onclick="createFigure(event)">Crear Figura</button>
+                    </div>
+                </form>
+            </div>            
+
+
+            <div class="hero-body container">
+                <div id="results-graph" class="">
+                </div>
+                <div id="results-area" class="">
+                </div>
+            </div>
+        </section>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
