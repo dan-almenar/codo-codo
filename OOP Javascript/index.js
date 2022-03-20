@@ -1,7 +1,7 @@
 class Polygon {
     constructor(sides, len) {
-        this.sides = sides
-        this.len = len
+        this.sides = parseInt(sides)
+        this.len = parseFloat(len)
         this.name = this.setName()
 
         // auto fix this.sidesQuantity para que no haya figuras con más de 360 lados (circulos) o menores a 3 lados (triángulos)
@@ -89,6 +89,8 @@ class Polygon {
                 return 'Endecágono'
             case 12:
                 return 'Dodecágono'
+            default:
+                return '(Figura de más de 12 lados)'
         }
     }
 }
