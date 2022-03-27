@@ -1,0 +1,81 @@
+/*
+Se importa el framework Bulma (https://bulma.io) para hacer uso de
+sus clases y especialmente de su Hero layout.
+*/
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+.flex {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.right {
+    margin: 25px auto;
+    display: grid;
+    justify-items: right;
+}
+.left {
+    margin: 25px auto;
+    display: grid;
+    justify-items: left;
+}
+p {
+    font-size: 1.1rem;
+    margin: 15px auto;
+}
+#nums-input {
+    width: 400px;
+    margin: 15px auto;
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+.bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.italic {
+    font-style: italic;
+}
+.divider {
+    border-top: 1px solid white;
+    margin: 15px auto;
+}
+.image {
+    width: 480px;
+    height: auto;
+    margin: 15px auto;
+}
+button {
+    background: none;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 8px 10px;
+    color: white;
+}
+button:hover {
+    animation: .3s btnExpand forwards;
+}
+
+/* animaciones */
+@keyframes btnExpand {
+    0% {
+        width: 200px;
+        font-size: 1.2rem
+    }
+    100% {
+        width: 250px;
+        font-size: 1.4rem;
+    }
+}
